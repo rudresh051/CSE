@@ -69,22 +69,23 @@ of a computer and the computer hardware
         * CPU, memory, I/o devices
     * Operating system
         * Controls and coordinates use of hardware among various applications and users
-    * Application programs — define the ways in which the system resources are used to solve the computing problems of the users
+    * Application programs — define the ways in which the system resources are used to solve the   
+    computing problems of the users
         * Word processors, compilers, web browsers, database systems, video games
     * Users
         * People, machines, other computers
 
 ![cmponents](image.png)
 
-# What Operating Systems Do
-* The operating system controls the hardware and coordinates its use among the various application programs for the various users.
-* We can also view a computer system as consisting of hardware, software,
-and data.
-* The operating system provides the means for proper use of these resources in the operation of the computer system.
-* An operating system is similar to a government. Like a government, it
-performs no useful function by itself. It simply provides an environment
-within which other programs can do useful work.
-* To understand more fully the operating system's role, we need to explore operating systems from two viewpoints:
-    * The user
-    * The system.
+# User View
+The user's view of the computer varies according to the interface being used.
+* Single user computers (e.g., PC, workstations). Such systems are  
+designed for one user to monopolize its resources. The goal is to  
+maximize the work (or play) that the user is performing. The operating  
+system is designed mostly for ease of use and good performance.  
 
+* Multi user computers (e.g., mainframes, computing servers). These  
+users share resources and may exchange information. The operating  
+system in such cases is designed to maximize resource utilization -- to  
+assure that all available CPU time, memory, and 1/0 are used efficient  
+and that no individual users takes more than their air share.  
