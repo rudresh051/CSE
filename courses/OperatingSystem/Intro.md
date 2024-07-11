@@ -74,5 +74,17 @@ of a computer and the computer hardware
     * Users
         * People, machines, other computers
 
+![cmponents](image.png)
 
+# What Operating Systems Do
+* The operating system controls the hardware and coordinates its use among the various application programs for the various users.
+* We can also view a computer system as consisting of hardware, software,
+and data.
+* The operating system provides the means for proper use of these resources in the operation of the computer system.
+* An operating system is similar to a government. Like a government, it
+performs no useful function by itself. It simply provides an environment
+within which other programs can do useful work.
+* To understand more fully the operating system's role, we need to explore operating systems from two viewpoints:
+    * The user
+    * The system.
 
