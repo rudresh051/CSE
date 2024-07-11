@@ -90,6 +90,63 @@ system in such cases is designed to maximize resource utilization -- to
 assure that all available CPU time, memory, and 1/0 are used efficient  
 and that no individual users takes more than their air share.  
 
-* **Handheld computers** (e.g., smartphones and tablets). The user   interface for mobile computers generally features a touch screen. The   systems are resource poor, optimized for usability and battery life.  
+* **Handheld computers** (e.g., smartphones and tablets). The user   interface for mobile computers generally   
+features a touch screen. The   systems are resource poor, optimized for usability and battery life.  
 
-* **Embedded computers** (e.g., computers in home devices and   automobiles) The user interface may have numeric keypads and may turn   indicator lights on or off to show status. The operating systems are   designed primarily to run without user intervention.  
+* **Embedded computers** (e.g., computers in home devices and   automobiles) The user interface may have numeric   
+keypads and may turn   indicator lights on or off to show status. The operating systems are   designed primarily to   
+run without user intervention.  
+
+# System View
+From the computer's POV, the OS is the program most intimately involved with the hardware.   
+There are two different views:  
+
+* The operating system is a **resource allocator**
+    * Manages all resources
+    * Decides between conflicting requests for efficient and fair resource use
+
+* The operating system is a **control program**
+    * Controls execution of programs to prevent errors and improper use of the computer
+
+# Defining Operating System
+No universally accepted definition of what an OS:
+
+* Operating systems exist to offer a reasonable way to solve the problem of creating a usable computing system.
+* The fundamental goal of computer systems is to execute user programs
+and to make solving user problems easier.
+* Since bare hardware alone is not particularly easy to use, application
+programs are developed.
+    * These programs require certain common operations, such as those controlling I/O devices.
+    * The common functions of controlling and allocating resources brought together into one piece   
+    of software: the operating system.
+
+* A simple viewpoint is that it includes everything a vendor  
+ships when you order the operating system. The features  
+that are included vary greatly across systems:  
+    * Some systems take up less than a megabyte of space and lack  
+even a full-screen editor,
+    * Some systems require gigabytes of space and are based entirely  
+on graphical windowing systems.
+
+
+* A more common definition, and the one that we usually follow, is that  
+the operating system is the one program running at all times on the   
+computer -- usually called the **kernel**.  
+
+* Along with the kernel, there are two other types of programs:  
+    * System programs, which are associated with the operating system but are not  
+necessarily part of the kernel.
+    * Application programs, which include all programs not associated with the  
+operation of the system.
+
+* The emergence of mobile devices, have resulted in an increase in  
+the number of features that constituting the operating system.  
+* Mobile operating systems often include not only a core kernel but  
+also middleware -- a set of software frameworks that provide  
+additional services to application developers.  
+* For example, each of the two most prominent mobile operating  
+systems -- Apple's iOS and Google's Android -- feature a core kernel  
+along with middleware that supports databases, multimedia, and  
+graphics (to name only a few).
+
+![evolution](image-1.png)
