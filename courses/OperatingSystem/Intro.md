@@ -79,13 +79,17 @@ of a computer and the computer hardware
 
 # User View
 The user's view of the computer varies according to the interface being used.
-* Single user computers (e.g., PC, workstations). Such systems are  
+* **Single user computers** (e.g., PC, workstations). Such systems are  
 designed for one user to monopolize its resources. The goal is to  
 maximize the work (or play) that the user is performing. The operating  
 system is designed mostly for ease of use and good performance.  
 
-* Multi user computers (e.g., mainframes, computing servers). These  
+* **Multi user computers** (e.g., mainframes, computing servers). These  
 users share resources and may exchange information. The operating  
 system in such cases is designed to maximize resource utilization -- to  
 assure that all available CPU time, memory, and 1/0 are used efficient  
 and that no individual users takes more than their air share.  
+
+* **Handheld computers** (e.g., smartphones and tablets). The user   interface for mobile computers generally features a touch screen. The   systems are resource poor, optimized for usability and battery life.  
+
+* **Embedded computers** (e.g., computers in home devices and   automobiles) The user interface may have numeric keypads and may turn   indicator lights on or off to show status. The operating systems are   designed primarily to run without user intervention.  
