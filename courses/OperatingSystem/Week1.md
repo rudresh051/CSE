@@ -63,6 +63,8 @@ of a computer and the computer hardware
         * Resource should be available 
         * e.g. Printer job explanation
 
+# Lecture 2
+
 # Computer System Structure
 * Computer system can be divided into four components:
     * Hardware — provides basic computing resources
@@ -150,3 +152,28 @@ along with middleware that supports databases, multimedia, and
 graphics (to name only a few).
 
 ![evolution](image-1.png)
+
+![layers](image-2.png)
+
+# Lecture 3
+
+## Computer-System Organization
+* A modern general-purpose computer system consists of one or more CPUs and a number   
+of device controllers connected through a common bus that provides access to shared memory.
+
+* Each device controller is in charge of a specific type of device (For example, disk drives,  
+audio devices, or video displays). Each device controller has a local buffer.
+
+* CPU moves data from/to main memory to/from local buffers.  
+* The CPU and the device controllers can execute in parallel, competing for   
+memory cycles. To ensure orderly access to the shared memory, a memory controller   
+synchronizes access to the memory
+
+![Modern Computer System](image-3.png)
+
+## Computer Startup
+* Bootstrap program is loaded at power-up or reboot
+    * Typically stored in ROM or EPROM, generally known as firmware
+    * Initializes all aspects of system
+    * Loads operating system kernel and starts execution
+
