@@ -172,21 +172,34 @@ synchronizes access to the memory
 ![Modern Computer System](image-3.png)
 
 ## Computer Startup
-* Bootstrap program is loaded at power-up or reboot
-    * Typically stored in ROM or EPROM, generally known as firmware
+* **Bootstrap program** is loaded at power-up or reboot
+    * Typically stored in ROM or EPROM, generally known as **firmware**
     * Initializes all aspects of system
     * Loads operating system kernel and starts execution
 
 
-# Computer-System Operation
+## Computer-System Operation
 * Once the kernel is loaded and executing, it can start providing services 
 to the system and its users.
 * Some services are provided outside of the kernel, by system programs that   
-are loaded into memory at boot time to become system processes, or system  
-daemons that run the entire time the kernel is running.
-* On UNIX, the first system process is init and it starts many other daemons.   
+are loaded into memory at boot time to become **system processes**, or system  
+**daemons** that run the entire time the kernel is running.
+* On UNIX, the first system process is **init** and it starts many other daemons.   
 Once this phase is complete, the system is fully booted, and the system waits   
 for some event to occur.
-* The occurrence of an event is usually signaled by an interrupt.
+* The occurrence of an event is usually signaled by an **interrupt**.
 
-> What happens when a computer is switched on?? Explain in terms of ROM, RAM, Hard disk, OS , Firmware
+> What happens when a computer is switched on?? Explain in terms of ROM, RAM, Hard disk, OS , Firmware  
+boot device, booting operation.
+
+
+## Interrupts
+* There are two types of interrupts:
+    * **Hardware** — a device may trigger an interrupt by sending a signal to the CPU,   
+    usually by way of the system bus.
+    * **Software** -- a program may trigger an interrupt by executing a special operation   
+    called a system call.
+* A software-generated interrupt (sometimes called **trap** or **exception**) is caused either by   
+an error (e.g., divide by zero) or a user request (e.g., an
+1/0 request).
+* An operating system is **interrupt driven.**
