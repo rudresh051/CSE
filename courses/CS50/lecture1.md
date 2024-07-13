@@ -115,5 +115,4 @@ differently .
 ![pseudocode](image-2.png)
 
 cs50.dev
-
 scratch.mid.edu
