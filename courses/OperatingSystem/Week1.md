@@ -177,3 +177,16 @@ synchronizes access to the memory
     * Initializes all aspects of system
     * Loads operating system kernel and starts execution
 
+
+# Computer-System Operation
+* Once the kernel is loaded and executing, it can start providing services 
+to the system and its users.
+* Some services are provided outside of the kernel, by system programs that   
+are loaded into memory at boot time to become system processes, or system  
+daemons that run the entire time the kernel is running.
+* On UNIX, the first system process is init and it starts many other daemons.   
+Once this phase is complete, the system is fully booted, and the system waits   
+for some event to occur.
+* The occurrence of an event is usually signaled by an interrupt.
+
+> What happens when a computer is switched on?? Explain in terms of ROM, RAM, Hard disk, OS , Firmware
