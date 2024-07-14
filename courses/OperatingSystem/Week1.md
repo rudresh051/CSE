@@ -222,3 +222,18 @@ instruction.
 
 # Interrupt-driven I/O cycle
 ![interrupt-driven i/o cycle](image-5.png)
+
+# Lecture 4 : Introduction (Contd.)
+The image below is of an Interrupt vector table for the Intel Pentium processor.    
+An interrupt vector table (IVT) is a table in memory that the processor uses to locate   
+the Interrupt Service Routines (ISRs) for handling events like errors or device requests.    
+The table contains 256 entries, one for each possible interrupt. Each entry points to the   
+location of the ISR code that should be run in response to that particular interrupt.
+
+The interrupt vector table allows the processor to quickly and efficiently respond to  
+interrupts without having to search through memory for the appropriate ISR code.
+
+The specific interrupt handlers shown in the image are for the Intel Pentium processor,   
+but the general concept of interrupt vector tables applies to all x86 processors.
+
+![IntelPentiumProcessor](image-6.png)
