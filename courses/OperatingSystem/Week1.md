@@ -392,3 +392,73 @@ versatile computing.
 * Modern computer systems may deviate somewhat from the strict von Neumann design. For instance,    
 cache memory can be used to improve performance by storing frequently accessed data closer to the CPU.    
 Also,  multiple cores or processors may be present within a single CPU.
+
+## Computer-System Architecture
+* Single general-purpose processor
+    * Most systems have special-purpose processors as well
+
+* Multiprocessors systems
+    * Also known as parallel systems, tightly-coupled systems
+    * Advantages include:
+        * Increased throughtout
+        * Economy of scale
+        * Increased reliability - graceful-degradation/fault-tolerance
+    * Two types:
+        * Symmetric Multiprocessing - each processor performs all tasks
+        * Asymmetric Multiprocessing - each processor is assigned a specific task.
+
+# Lecture 05 : Introduction (Contd.)
+
+## Symmetric Multiprocessing Architecture
+![symmetric multiprocessing architecture](image-9.png)
+
+Above is a diagram of a symmetric multiprocessing (SMP) architecture.
+
+**Symmetric Multiprocessing (SMP) Architecture**
+
+An SMP architecture is a type of multiprocessing architecture where multiple processors   
+share a single memory space and a single operating system. This means that all processors   
+have equal access to all data and resources, and they can all run any task that is submitted   
+to the system.
+
+The diagram you sent shows the following key components of an SMP architecture:
+
+* **CPUs (Central Processing Units):** These are the cores of the system that execute instructions.   
+The diagram shows two CPUs, but SMP systems can have more than two CPUs.
+* **Registers:** These are small, high-speed memory locations that are used to store data that is   
+currently being used by the CPU.
+* **Cache:** Each CPU may have its own cache, which is a small amount of high-speed memory that   
+stores frequently accessed data and instructions. This can help to improve performance by reducing   
+the number of times the CPU needs to access main memory.
+* **Main memory:** This is the primary memory of the system, and it stores all data and instructions   
+that are not currently being used by the CPUs. All CPUs have equal access to main memory.
+* **I/O (Input/Output):** These are devices that allow the computer to interact with the external world,   
+such as keyboards, monitors, and network cards. In an SMP system, all CPUs can access I/O devices.
+
+**Benefits of SMP Architecture**
+
+* **Improved performance:** SMP systems can provide significant performance improvements over single-processor   
+systems, especially for tasks that can be easily parallelized. This is because multiple processors can work on   
+different parts of a task at the same time.
+* **Scalability:** SMP systems can be scaled up by adding more processors, which can improve performance for   
+even more demanding workloads.
+
+**Limitations of SMP Architecture**
+
+* **Cost:** SMP systems can be more expensive than single-processor systems, due to the cost of the   
+additional processors.
+* **Complexity:** SMP systems can be more complex to design and manage than single-processor systems.
+* **Memory bottleneck:** As the number of processors in an SMP system increases, the memory bus can   
+become a bottleneck. This is because all processors share the same memory bus, and there is a limit   
+to how much data can be transferred on the bus at a time.
+
+**Other Multiprocessing Architectures**
+
+There are other types of multiprocessing architectures besides SMP. Here are two common examples:
+
+* **Asymmetric multiprocessing (ASMP):** In an ASMP system, there are multiple processors, but they are   
+not all equal. There may be one or more processors that are designed for high-performance computing tasks,   
+while other processors are designed for handling I/O tasks.
+* **Cluster computing:** In a cluster computing system, multiple computers are connected together to   
+form a single virtual computer. Cluster computing systems can be used to create very high-performance   
+computing environments. 
