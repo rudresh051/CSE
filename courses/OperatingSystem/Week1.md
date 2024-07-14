@@ -515,3 +515,16 @@ for the instruction.
 This is a simplified overview of how a computer processor works. The actual process can be   
 much more complex, but hopefully, this gives you a general understanding of the 
 different components and how they work together.
+
+## Clustered Systems
+Like multiprocessor systems, but multiple systems working together
+* Usually sharing storage via a **storage-area network (SAN)**
+* Provides a high-availability service which survives failures
+    * **Asymmetric clustering** has one machine in hot-standby mode
+    * **Symmetric clustering** has multiple nodes running applications, monitoring each
+other
+* Some clusters are for high-performance computing (HPC)
+    * Applications must be written to use **parallelization**
+* Some have **distributed lock manager (DLM)** to avoid conflicting operations
+
+![clustered systems](image-12.png)
