@@ -481,7 +481,7 @@ mobile devices.
 not all multiprocessor systems are multicore.
 
 ## A dual-core with two cores placed on the same chip
-![dual-core-cpu](image-10.png)
+![image](image-11.png)
 
 The image above is a block diagram of a computer processor. 
 * **Control Unit (CU):**  The CU fetches instructions from memory, decodes them, and   
