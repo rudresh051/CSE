@@ -71,7 +71,8 @@ of a computer and the computer hardware
         * CPU, memory, I/o devices
     * Operating system
         * Controls and coordinates use of hardware among various applications and users
-    * Application programs — define the ways in which the system resources are used to solve the   
+    * Application programs — define the ways in which the system resources are used to   
+    solve the   
     computing problems of the users
         * Word processors, compilers, web browsers, database systems, video games
     * Users
@@ -92,12 +93,13 @@ system in such cases is designed to maximize resource utilization -- to
 assure that all available CPU time, memory, and 1/0 are used efficient  
 and that no individual users takes more than their air share.  
 
-* **Handheld computers** (e.g., smartphones and tablets). The user   interface for mobile computers generally   
-features a touch screen. The   systems are resource poor, optimized for usability and battery life.  
+* **Handheld computers** (e.g., smartphones and tablets). The user   interface for mobile   
+computers generally features a touch screen. The systems are resource poor, optimized for   
+usability and battery life.  
 
-* **Embedded computers** (e.g., computers in home devices and   automobiles) The user interface may have numeric   
-keypads and may turn   indicator lights on or off to show status. The operating systems are   designed primarily to   
-run without user intervention.  
+* **Embedded computers** (e.g., computers in home devices and   automobiles) The user interface may 
+have numeric keypads and may turn   indicator lights on or off to show status. The operating systems are   
+designed primarily to run without user intervention.  
 
 # System View
 From the computer's POV, the OS is the program most intimately involved with the hardware.   
@@ -113,7 +115,8 @@ There are two different views:
 # Defining Operating System
 No universally accepted definition of what an OS:
 
-* Operating systems exist to offer a reasonable way to solve the problem of creating a usable computing system.
+* Operating systems exist to offer a reasonable way to solve the problem of creating a usable computing   
+system.
 * The fundamental goal of computer systems is to execute user programs
 and to make solving user problems easier.
 * Since bare hardware alone is not particularly easy to use, application
@@ -462,3 +465,53 @@ while other processors are designed for handling I/O tasks.
 * **Cluster computing:** In a cluster computing system, multiple computers are connected together to   
 form a single virtual computer. Cluster computing systems can be used to create very high-performance   
 computing environments. 
+
+## Multicore Systems
+* Most CPU design now includes multiple computing cores on a
+single chip. Such multiprocessor systtms are termed
+multicore.
+* Multicore systems can be more efficient than multiple chips  
+with single cores because:
+* On-chip communication is faster than between-chip  
+communication.
+* One chip with multiple cores uses significantly less power than  
+multiple single-core chips, an important issue for laptops as well as  
+mobile devices.
+* Note -- while multicore systems are multiprocessor systems,  
+not all multiprocessor systems are multicore.
+
+## A dual-core with two cores placed on the same chip
+![dual-core-cpu](image-10.png)
+
+The image above is a block diagram of a computer processor. 
+* **Control Unit (CU):**  The CU fetches instructions from memory, decodes them, and   
+controls the flow of data throughout the system. It acts like the مغز (magz) or "brain"   
+of the processor, making decisions and ensuring everything runs smoothly.
+* **Arithmetic Logic Unit (ALU):** The ALU performs mathematical and logical operations on data.   
+It's the calculator unit of the CPU, crunching numbers and performing comparisons.
+
+* **Registers:** These are small, high-speed memory locations that store data that is currently   
+being used by the CPU.  They provide quick access to frequently used data, like having important   
+notes on your desk while you work on a project.
+* **L1 Cache:**  This is a small amount of very high-speed memory that is located on the CPU itself   
+or very close to it. It stores frequently accessed data and instructions, similar to having frequently   
+used reference materials right next to your desk.
+* **L2 Cache (if applicable):**  This is a larger cache than L1, but not as fast. It sits between the   
+L1 cache and main memory, acting as a staging area for data that is likely to be needed soon by the   
+CPU. Imagine this like having a bookshelf near your desk where you keep resources you might need soon.
+* **Main Memory (RAM):** This is the primary storage for a computer and stores data and instructions   
+that the CPU needs to access. It's like your main workspace where you keep everything you're working on.
+
+**Data Flow**
+
+1. The CU retrieves instructions from main memory.
+2. The CU decodes the instructions and determines what operation needs to be performed.
+3. The CU fetches any data operands from main memory or cache that are needed   
+for the instruction.
+4. The CU sends the data operands and any control signals to the ALU.
+5. The ALU performs the mathematical or logical operation on the data operands.
+6. The CU may store the results of the operation in a register or back in main memory.
+
+This is a simplified overview of how a computer processor works. The actual process can be   
+much more complex, but hopefully, this gives you a general understanding of the 
+different components and how they work together.
