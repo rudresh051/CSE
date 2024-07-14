@@ -198,8 +198,27 @@ boot device, booting operation.
     * **Hardware** — a device may trigger an interrupt by sending a signal to the CPU,   
     usually by way of the system bus.
     * **Software** -- a program may trigger an interrupt by executing a special operation   
-    called a system call.
+    called a **system call**.
 * A software-generated interrupt (sometimes called **trap** or **exception**) is caused either by   
 an error (e.g., divide by zero) or a user request (e.g., an
-1/0 request).
+I/O request).
 * An operating system is **interrupt driven.**
+
+## Common Functions of Interrupts
+* When an interrupt occurs, the operating system preserves the state of  
+the CPU by storing the registers and the program counter
+* Determines which type of interrupt has occurred and transfers control  
+to the interrupt-service routine.
+* An interrupt-service routine is a collection of routines (modules), each  
+of which is responsible for handling one particular interrupt (e.g., from  
+a printer, from a disk)
+* The transfer is generally through the interrupt vector, which contains  
+the addresses of all the service routines
+* Interrupt architecture must save the address of the interrupted  
+instruction.
+
+# Interrupt Timeline
+![Interrupt Timeline](image-4.png)
+
+# Interrupt-driven I/O cycle
+![interrupt-driven i/o cycle](image-5.png)
