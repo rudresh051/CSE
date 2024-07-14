@@ -528,3 +528,76 @@ other
 * Some have **distributed lock manager (DLM)** to avoid conflicting operations
 
 ![clustered systems](image-12.png)
+
+## Multiprogrammed System
+* Single user cannot keep CPU and I/O devices busy at all times
+* Multiprogramming organizes jobs (code and data) so CPU always has
+one to execute
+* A subset of total jobs in system is kept in memory
+* Batch systems:
+    * One job selected and run via **job scheduling**
+    * When it has to wait (for I/O for example), OS switches to another job
+* Interactive systems:
+    * Logical extension of batch systems -- CPU switches jobs so frequently that  
+users can interact with each job while it is running, creating **interactive** computing.
+
+## Interactive Systems
+
+* Response time should be < 1 second
+* Each user has at least one program executing in memory.
+Such a program is referred to as a **process**
+* If several processes are ready to run at the same time, we
+need to have **CPU scheduling.**
+* If processes do not fit in memory, swapping moves them in
+and out to run
+* Virtual memory allows execution of processes not
+completely in memory
+
+## Memory Layout for Multiprogrammed System
+The image is of a memory layout for a multiprogrammed system. 
+
+In a multiprogrammed system, multiple programs are loaded into memory at the same time.   
+This allows the CPU to quickly switch between programs and improve overall system performance.   
+The memory layout you sent shows how memory is divided up among the different programs in a   
+multiprogrammed system.
+
+* **Operating System:** The operating system (OS) is a program that manages the resources of the   
+computer system. It sits at the topmost memory address,  because it needs direct control over all   
+the hardware and software resources.
+* **Job 1, Job 2, Job 3, and Job 4:** These are the different programs that are running in the system.   
+Each program is allocated a block of memory to store its instructions and data. The memory for each job   
+is contiguous, meaning the allocated memory blocks are adjacent to each other. 
+* **Max** : This label likely refers to the maximum amount of memory that can be allocated to a single job.   
+It prevents any one job from monopolizing the memory space.
+
+**Benefits of Multiprogramming**
+
+* **Improved CPU utilization:** The CPU can stay busy even if one program is waiting for I/O (input/output)   
+operations such as disk access. While one program is waiting, the CPU can switch to another program that is   
+ready to run.
+* **Increased throughput:** Throughput is the amount of work that can be done in a given amount of time.   
+By using multiple programs, a multiprogrammed system can potentially improve throughput compared to a   
+single-program system.
+
+**Challenges of Multiprogramming**
+
+* **Memory management:** The memory needs to be carefully divided up among the different programs to   
+avoid memory fragmentation. Memory fragmentation is a condition that occurs when there is enough free   
+memory to satisfy a memory allocation request, but the free memory is scattered throughout memory and   
+cannot be used.
+* **I/O wait time:** If multiple programs are waiting for I/O operations, the CPU may spend more time   
+waiting for I/O than actually executing instructions.
+
+## Modes of Operation
+
+* A mechanism that allows the OS to protect itself and other system
+components
+* Two modes:
+    * User mode
+    * Kernel mode
+* Mode bit (0 or 1) provided by hardware
+    * Provides ability to distinguish when system is running user code or kernel code
+    * Some instructions designated as privileged, only executable in kernel mode
+    * Systems call by a user asking the OS to perform some function changes  
+from user mode to kernel mode.
+    * Return from a system call resets the mode to user mode.
