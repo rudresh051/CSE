@@ -58,5 +58,5 @@ not interfere with each other
     * Protection involves ensuring that all access to system resources is
 controlled
     * Security of the system from outsiders requires user
-authentication, extends to defending external 1/0 devices
+authentication, extends to defending external I/O devices  
 from invalid access attempts
