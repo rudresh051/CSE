@@ -28,9 +28,11 @@ system services include:
     * **Program execution:** The operating system loads programs into memory and executes them.
     * **I/O (Input/Output) management:** The operating system manages the communication between the computer   
     and peripheral devices such as printers, disks, and keyboards.
-    * **File management:** The operating system creates, deletes, reads, writes, and organizes files on storage devices.
+    * **File management:** The operating system creates, deletes, reads, writes, and organizes files on   
+    storage devices.
     * **Memory management:** The operating system allocates and deallocates memory for programs and data.
-    * **Process management:** The operating system creates and terminates processes, which are instances of running programs.
+    * **Process management:** The operating system creates and terminates processes, which are instances of   
+    running programs.
     * **Security and protection:** The operating system protects the system from unauthorized access and ensures   
     that programs cannot interfere with each other.
 
@@ -45,13 +47,13 @@ managing system resources, and ensuring the smooth operation of the computer sys
 
 ## Command Interpreters (CLI)
 CLI allows users to directly enter commands to be performed by the operating system.  
-    * Some operating systems include the command interpreter in the kernel.
-    * Some operating systems, such as Windows and UNIX, treat the command interpreter as a special program   
-    that is running when a job is initiated or when a user first logs on.
-    * On systems with multiple command interpreters to choose from, the interpreters are known as **shells.**
-    * The main function of the command interpreter is to get and execute the next user-specified command.
-    * Sometimes commands built-in, sometimes just names of programs
-        * If the latter, adding new features doesn't require shell modification
+* Some operating systems include the command interpreter in the kernel.
+* Some operating systems, such as Windows and UNIX, treat the command interpreter as a special program   
+that is running when a job is initiated or when a user first logs on.
+* On systems with multiple command interpreters to choose from, the interpreters are known as **shells.**
+* The main function of the command interpreter is to get and execute the next user-specified command.
+* Sometimes commands built-in, sometimes just names of programs
+* If the latter, adding new features doesn't require shell modification
 
 >  sh - Bourne Shell  
 csh - c shell
@@ -63,7 +65,8 @@ csh - c shell
 * User-friendly desktop metaphor interface
     * Usually mouse, keyboard, and monitor
     * Icons represent files, programs, actions. etc
-    * Various mouse buttons over objects in the interface cause various actions ( provide information, options, execute function. open directory (known as a folder)
+    * Various mouse buttons over objects in the interface cause various actions (provide information, options,   
+    execute function. open directory (known as a folder)
     * Invented at Xerox PARC
 * Many systems now include both CLI and GUI interfaces
     * Microsoft Windows is GUI with CLI "command" shell
@@ -86,9 +89,12 @@ csh - c shell
 Programming Interface (API) rather than direct system call
 * Three most common APIs are:
     * Win32 API for Windows,
-    * POSIX API for POSIX-based systems (including virtually all versions of UNIX, Linux, and Mac OS X),
+    * POSIX API for POSIX-based systems (including virtually all versions of UNIX,   
+    Linux, and Mac OS X),
     * Java API for the Java virtual machine (JVM)
 
 ## Example of System Calls
 * System call sequence to copy the contents of one file to another file
 ![systemcallsequence](image-19.png)
+
+## Example of Standard API
