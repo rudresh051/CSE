@@ -33,11 +33,11 @@ system services include:
     * **Memory management:** The operating system allocates and deallocates memory for programs and data.
     * **Process management:** The operating system creates and terminates processes, which are instances of   
     running programs.
-    * **Security and protection:** The operating system protects the system from unauthorized access and ensures   
-    that programs cannot interfere with each other.
+    * **Security and protection:** The operating system protects the system from unauthorized access and 
+    ensures that programs cannot interfere with each other.
 
-* **Hardware:** This section refers to the physical components of the computer system, such as the CPU, memory,   
-storage devices, and input/output devices.
+* **Hardware:** This section refers to the physical components of the computer system, such as the CPU,   
+memory, storage devices, and input/output devices.
 
 * **Software:** This section refers to the programs and data that are stored on the computer system.
 
@@ -65,12 +65,13 @@ csh - c shell
 * User-friendly desktop metaphor interface
     * Usually mouse, keyboard, and monitor
     * Icons represent files, programs, actions. etc
-    * Various mouse buttons over objects in the interface cause various actions (provide information, options,   
+    * Various mouse buttons over objects in the interface cause various actions   
+    (provide information, options,   
     execute function. open directory (known as a folder)
     * Invented at Xerox PARC
 * Many systems now include both CLI and GUI interfaces
     * Microsoft Windows is GUI with CLI "command" shell
-    * Apple Mac OS X is "Aqua" GUI interface with UNIX kernel underneath and  shells available
+    * Apple Mac OS X is "Aqua" GUI interface with UNIX kernel underneath and shells available
     * Unix and Linux have CLI with optional GUI interfaces (CDE, KDE, GNOME)
 
 ## Touchsceen Interfaces
@@ -112,3 +113,25 @@ status of the system call and any return values
     * Most details of OS interface hidden from programmer by API
         * Managed by run-time support library (set of functions built into libraries
 included with compiler)
+
+## System Call -- OS Relationship
+The handling of a user application invoking the open() system call
+
+![systemCall--OSRelationship](image-21.png)
+
+## System Call Parameter Passing
+* Often, more information is required than simply identity of
+desired system call
+    * Exact type and amount of information vary according to OS and call
+* Three general methods used to pass parameters to the OS
+    * Simplest: pass the parameters in registers
+        * In some cases, may be more parameters than registers
+    * Parameters stored in a block, or table, in memory, and address of block passed as a  
+    parameter in a register
+        * This approach taken by Linux and Solaris
+* Parameters placed, or pushed, onto the stack by the program and popped off the stack by   
+the operating system
+* Block and stack methods do not limit the number or length of
+parameters being passed
+
+
