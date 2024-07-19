@@ -98,3 +98,17 @@ Programming Interface (API) rather than direct system call
 ![systemcallsequence](image-19.png)
 
 ## Example of Standard API
+In windows we can do it by /?   
+e.g. `ipconfig /?`
+![standard-API](image-20.png)
+
+## System Call Implementation
+* Typically, a number is associated with each system call
+    * System-call interface maintains a table indexed according to these numbers
+* The system call interface invokes the intended system call in OS kernel and returns
+status of the system call and any return values
+* The caller need not know a thing about how the system call is implemented
+    * Just needs to obey the API and understand what the OS will do as a result call
+    * Most details of OS interface hidden from programmer by API
+        * Managed by run-time support library (set of functions built into libraries
+included with compiler)
