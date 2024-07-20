@@ -67,3 +67,59 @@ execution
 * Allow and deny user access
 
 
+## Examples of Windows and Unix System Calls
+![process](image-23.png)
+
+## Example -- Standard C library
+
+C program invoking printf() library call, which call write() system call
+
+![invoke-printf](image-24.png)
+
+## System Programs
+* System programs provide a convenient environment for program
+development and execution.
+* Some of them are simply user interfaces to system calls. Others are
+considerably more complex.
+* They can be divided into:
+    * File manipulation
+    * Status information sometimes stored in a File modification
+    * Programming language support
+    * Program loading and execution
+    * Communications
+    * Background services
+    * Application programs
+* Most users' view of the operation system is defined by system
+programs, not the actual system calls
+
+## System Programs
+
+* File management
+    * Create, delete, copy, rename, print, dump, list, and generally manipulate files 
+    and directories
+
+* Status information
+    * Some programs ask the system for information - date, time, amount of available memory, disk space,   
+    number of users
+    * Others programs provide detailed performance, logging, and
+debugging information
+    * Typically, these programs format and print the output to the
+terminal or other output devices
+    * Some systems implement a registry - used to store and retrieve
+configuration information
+
+## System Programs (Cont.)
+* **File modification**
+    * Text editors to create and modify files
+    * Special commands to search contents of files or perform transformations of the text  
+* **Programming-language support** - Compilers, assemblers, debuggers and
+interpreters sometimes provided
+* **Program loading and execution**- Absolute loaders, relocatable loaders, linkage  
+editors, and overlay-loaders, debugging systems for higher-level and machine
+language
+* **Communications** - Provide the mechanism for creating virtual connections  
+among processes, users, and computer systems
+• Allow users to send messages to one another's screens, browse web pages,  
+send electronic-mail messages, log in remotely, transfer files from one machine  
+to another
+
