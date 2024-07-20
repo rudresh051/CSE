@@ -116,6 +116,7 @@ included with compiler)
 
 ## System Call -- OS Relationship
 The handling of a user application invoking the open() system call
+* 
 
 ![systemCall--OSRelationship](image-21.png)
 
