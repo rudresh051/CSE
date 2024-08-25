@@ -108,11 +108,11 @@ differently .
 
 ### Algorithms
 
-![findNumber](image.png)
+![findNumber](AssetsCS50/image.png)
 
 ### Pseudocode
 
-![pseudocode](image-2.png)
+![pseudocode](AssetsCS50/image-2.png)
 
 cs50.dev
 scratch.mid.edu
