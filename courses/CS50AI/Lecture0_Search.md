@@ -128,3 +128,7 @@ We need to get a visual sense to understand this alogorithm
 
 * It is called Depth-first search
     * search algorithm that always expands the deepeset node in the frontier
+
+* Breadh-first search
+    * search algorithm that always expands the shallowest node in the frontier
+    * It uses Queue (first-in first-out data type)
