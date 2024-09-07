@@ -99,3 +99,32 @@ Actions(s) returns the set of actions that can be executed in state s
         * Expand node, add resulting nodes to the frontier.
 
 ![alt text](image-6.png)
+
+What could go wrong?
+e.g. if we have two way path
+
+![alt text](image-7.png)
+
+what is the solution to above problem?
+
+By somewhat keeping a track of what is explored
+
+* Revised Approach
+    * Start with a frontier that contains the initial state.
+    * Start with an empty explored set.
+    * Repeat:
+        * If the frontier is empty, then no solution.
+        * Remove a node from the frontier.
+        * If node contains goal state, return the solution.
+        * Add the node to the explored set.
+
+
+> Stack last-in first-out data type
+
+
+![alt text](image-9.png)
+
+We need to get a visual sense to understand this alogorithm
+
+* It is called Depth-first search
+    * search algorithm that always expands the deepeset node in the frontier
