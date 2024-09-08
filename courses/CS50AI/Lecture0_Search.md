@@ -132,3 +132,45 @@ We need to get a visual sense to understand this alogorithm
 * Breadh-first search
     * search algorithm that always expands the shallowest node in the frontier
     * It uses Queue (first-in first-out data type)
+
+
+e.g. Depth-First Search
+Maze Problem - 
+
+![alt text](image-10.png)
+
+is this algorithm always going to work?
+yes if it is finite. Eventually it will explore everything  
+
+is it going to be a optimal solution?  
+not necessarily  
+
+![alt text](image-12.png)
+
+more optimal solution with less steps.
+
+![alt text](image-11.png)
+
+how does BFS will work in this problem?
+
+![alt text](image-13.png)
+
+It will go in both direction. one step away at same time from A  
+
+so we get optimal solution here with BFS
+
+DFS will pick one and keep following until it hits dead end.
+
+In the larger maze it had to explore a larger set of states.  
+so in this we see a some trade-offs.
+
+![alt text](image-14.png)
+
+```
+// maze.py
+
+```
+So we would like is our Algorithm to be more intelligent. 
+In above case it ended up exploring the complete graph.
+
+
