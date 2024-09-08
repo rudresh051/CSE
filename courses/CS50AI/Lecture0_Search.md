@@ -173,4 +173,18 @@ so in this we see a some trade-offs.
 So we would like is our Algorithm to be more intelligent. 
 In above case it ended up exploring the complete graph.
 
+so if our algorithm knows the coordinates where B is it can make different decision.
+Basically in a maze, moving in the coordinate direction of the goal is usually, though not always, a good thing.
 
+## Uninformed search
+search strategy that uses no problem specific knowledge
+e.g. DFS,BFS
+## Informed
+search strategy that uses problem-specific knowledge to find solutions more efficiently
+
+* greedy best-first search
+    * search algorithm that expands the node that is closest  
+    to the goal, as estimated by a heuristic function h(n)
+
+
+![alt text](image-15.png)
