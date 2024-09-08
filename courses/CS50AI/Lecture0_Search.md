@@ -188,3 +188,43 @@ search strategy that uses problem-specific knowledge to find solutions more effi
 
 
 ![alt text](image-15.png)
+
+We need to have good heuristic function.
+
+is it optimal?
+let's take another example
+
+![alt text](image-16.png)
+
+But above path is not optimal
+
+![alt text](image-17.png)
+
+It is not necessarily optimal. so in actuality there was better  
+solution
+
+so we would like to modify our algorithm
+
+## A* search
+search algorithm that expands node with lowest value of g(n) + h(n)  
+
+g(n) = cost to reach node  
+h(n) = estimated cost to goal
+
+![alt text](image-18.png)
+
+A*search is optimal if
+    * h(n) is admissible (never overestimates the true cost), and
+    * h(n) is consistent(for every node n and successor n' with step cost c h(n) <= h(n') + c)
+
+Choosing heuristic is important.
+
+# Adversarial Search
+Where some other agent is trying to block.
+e.g. goal is make 3 x's to win in tic-tac-toe
+
+![alt text](image-19.png)
+
+## Minimax
+
+
