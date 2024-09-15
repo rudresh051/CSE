@@ -226,5 +226,22 @@ e.g. goal is make 3 x's to win in tic-tac-toe
 ![alt text](image-19.png)
 
 ## Minimax
+We need a algorithm where someone is trying to stop our search.
+
+* MAX(X) aims to maximize score.
+* MIN(O) aims to minimize score.
+
+### Game
+* So : initial state
+* PLAYER(s) : returns which player to move in state s
+* ACTIONS(s) : returns legal moves in state s
+* RESULT(s, a) : returns state after action a taken in state s
+* TERMINAL(s) : checks if state s is a terminal state
+* UTILITY(s) : final numerical value for terminal state s
+
+
+
+
+
 
 
