@@ -243,6 +243,29 @@ We need a algorithm where someone is trying to stop our search.
 
 ![alt text](image-21.png)
 
+This is how a genaral min-max algo might look like
+
+![alt text](image-22.png)
+
+* Given a state s:
+    * MAX picks action a in ACTIONS(s) that produces
+highest value of MIN-VALUE(Results(s,a))
+    * MIN picks action a in ACTIONS(s) that produces
+smallest value of MAX-VALUE(Results(s,a))
+
+```
+function MAX-VALUE(state):
+    if TERMINAL(state):
+        return UTILITY(state)
+    v = -∞
+    for action in ACTIONS(state):
+        v = MAX(v, MIN-VALUE(RESULT(state, action)))
+    return v
+
+```
+
+
+
 
 
 
