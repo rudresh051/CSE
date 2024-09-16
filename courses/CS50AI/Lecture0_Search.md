@@ -239,6 +239,11 @@ We need a algorithm where someone is trying to stop our search.
 * TERMINAL(s) : checks if state s is a terminal state
 * UTILITY(s) : final numerical value for terminal state s
 
+![alt text](image-20.png)
+
+![alt text](image-21.png)
+
+
 
 
 
