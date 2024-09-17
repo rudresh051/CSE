@@ -263,7 +263,23 @@ function MAX-VALUE(state):
     return v
 
 ```
+### Minimax
+```
+MIN-VALUE(state):
+  if TERMINAL(state):
+    return UTILITY(state)
+  v = ∞
+  for action in ACTIONS(state):
+    v = min(v, MAX-VALUE(RESULT(state, action)))
+  return v
+```
+## Alpha-beta Pruning
+What optimizations we could make
 
+![alt text](image-23.png)
+
+
+![alt text](image-24.png)
 
 
 
