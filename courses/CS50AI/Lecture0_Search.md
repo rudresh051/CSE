@@ -281,6 +281,12 @@ What optimizations we could make
 
 ![alt text](image-24.png)
 
+* total possible chess games(lower bound) = 10^29000
+
+## Depth - limited Minimax
+
+Evaluation function - function that estimates the expected utility of the game from a given state.
+
 
 
 
