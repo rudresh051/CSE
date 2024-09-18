@@ -17,8 +17,29 @@ an assertion about the world in a knowledge representation language
 * Logical Connectives
 not ~
 and ^
-or |
+or | v
 implication =>
 biconditional <=>
 
 ![alt text](image-25.png)
+
+* And ^
+
+|P|Q|P^Q|
+|-|-|-|
+|false|false|false|
+|false | true | false|
+| true | false | false|
+|true | true | true|
+
+* Or (v)
+
+|P|Q| PvQ|
+|-|-|-|
+|false|false|false|
+|false|true|true|
+|true|false|true|
+|true|true|true|
+
+* Implication =>
+![alt text](image-26.png)
