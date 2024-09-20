@@ -23,7 +23,7 @@ biconditional <=>
 
 ![alt text](image-25.png)
 
-* And ^
+### And ^
 
 |P|Q|P^Q|
 |-|-|-|
@@ -32,7 +32,7 @@ biconditional <=>
 | true | false | false|
 |true | true | true|
 
-* Or (v)
+### Or (v)
 
 |P|Q| PvQ|
 |-|-|-|
@@ -41,8 +41,12 @@ biconditional <=>
 |true|false|true|
 |true|true|true|
 
-* Implication =>
+### Implication =>
+
 ![alt text](image-26.png)
+
+### Biconditional <=>
+![alt text](image-28.png)
 
 
 ### Model
