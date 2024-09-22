@@ -51,6 +51,20 @@ biconditional <=>
 
 ### Model
 
+```
+A model in AI or machine learning is a set of instructions or rules that helps a computer understand how to make predictions or decisions. It learns from past experiences (data) to figure out what will happen next. For example, if an AI model has learned from many photos of dogs, it can predict whether a new picture shows a dog.
+```
+```
+Assigning truth values to propositions is essential in logical systems and AI reasoning for several reasons, primarily to evaluate the validity of statements, derive conclusions, and simulate possible worlds or scenarios. Here's why this assignment process is important:
+
+1. Defining Meaning and Truth
+Propositions are abstract statements about the world, but their meaning depends on whether they are true or false in a specific context.
+Assigning a truth value to propositions gives us a way to evaluate their truthfulness, which is necessary for logical reasoning. Without assigning truth values, it would be impossible to make any formal judgments about the propositions' correctness or applicability in a given situation.
+Example:
+If you have a proposition like "The sky is blue," it’s meaningless unless we know whether this statement is true or false in a given context (e.g., during the day vs. at night).
+```
+
+
 The model is an assignment of a truth value to every proposition.   
 To reiterate, propositions are statements about the world that can be either true or false.  
 However, knowledge about the world is represented in the truth values of these   propositions.   
@@ -73,6 +87,16 @@ propositional logic sentences that can be used to make additional
 inferences about the world.
 
 ### Entailment (⊨)
+Entailment refers to a logical relationship between two statements where one statement necessarily follows from another. If a statement A entails a statement B, then B must be true if A is true.
+
+
+
+```
+For example, if an AI knows that:
+"All humans are mortal" (A),
+"Socrates is a human" (B),
+then it can logically entail that "Socrates is mortal" (C).
+```
 
 If α ⊨ β (α entails β), then in any world where α is true, β is true, too.
 
