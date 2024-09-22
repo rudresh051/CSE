@@ -54,6 +54,8 @@ biconditional <=>
 ```
 A model in AI or machine learning is a set of instructions or rules that helps a computer understand how to make predictions or decisions. It learns from past experiences (data) to figure out what will happen next. For example, if an AI model has learned from many photos of dogs, it can predict whether a new picture shows a dog.
 ```
+
+## Why to assign true or false?
 ```
 Assigning truth values to propositions is essential in logical systems and AI reasoning for several reasons, primarily to evaluate the validity of statements, derive conclusions, and simulate possible worlds or scenarios. Here's why this assignment process is important:
 
@@ -108,7 +110,18 @@ Entailment, on the other hand, is a relation that means that
 if all the information in α is true, then all the information in β is true.
 
 ## Inference
-Inference is the process of deriving new sentences from old ones.
+**Inference is the process of deriving new sentences from old ones.**
+
+```
+Logical Inference
+Inference is the process of deriving new truths (conclusions) from known truths (premises). To infer new information, we need to know the truth values of the propositions involved.
+By assigning truth values, a logical system can determine whether certain conclusions follow from a set of premises (this is where entailment comes in).
+Example:
+Consider the propositions:
+P: "If it rains, the ground will be wet."
+Q: "It is raining."
+R: "The ground is wet."
+```
 
 For instance, in the Harry Potter example earlier, sentences 4 and 5 were inferred from sentences 1, 2, and 3.
 
@@ -122,3 +135,4 @@ Consider the following example:
 P: It is a Tuesday. Q: It is raining. R: Harry will go for a run. KB: (P ∧ ¬Q) → R (in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
 
 To answer the query using the Model Checking algorithm, we enumerate all possible models
+
