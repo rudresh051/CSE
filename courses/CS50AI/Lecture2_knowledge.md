@@ -82,6 +82,9 @@ In fact, the number of possible models is 2 to the power of the number of propos
 In this case, we had 2 propositions, so 2²=4 possible models.
 
 ### Knowledge Base (KB)
+```
+In Artificial Intelligence (AI), a Knowledge Base (KB) is a centralized repository of information used to store, organize, and retrieve knowledge. It is a critical component of various AI systems, especially expert systems, and is designed to help these systems make decisions, reason, and solve complex problems by simulating human expertise. A knowledge base can include facts, rules, relationships, concepts, and other types of structured or unstructured data relevant to a particular domain.
+```
 
 The knowledge base is a set of sentences known by a knowledge-based agent.   
 This is knowledge that the AI is provided about the world in the form of   
@@ -132,7 +135,13 @@ Enumerate all possible models.
 If in every model where KB is true, α is true as well, then KB entails α (KB ⊨ α).
 Consider the following example:
 
-P: It is a Tuesday. Q: It is raining. R: Harry will go for a run. KB: (P ∧ ¬Q) → R (in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
+P: It is a Tuesday.   
+Q: It is raining.   
+R: Harry will go for a run. 
+
+KB: (P ∧ ¬Q) → R (in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
 
 To answer the query using the Model Checking algorithm, we enumerate all possible models
+
+
 
