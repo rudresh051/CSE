@@ -83,7 +83,12 @@ In this case, we had 2 propositions, so 2²=4 possible models.
 
 ### Knowledge Base (KB)
 ```
-In Artificial Intelligence (AI), a Knowledge Base (KB) is a centralized repository of information used to store, organize, and retrieve knowledge. It is a critical component of various AI systems, especially expert systems, and is designed to help these systems make decisions, reason, and solve complex problems by simulating human expertise. A knowledge base can include facts, rules, relationships, concepts, and other types of structured or unstructured data relevant to a particular domain.
+In Artificial Intelligence (AI), a Knowledge Base (KB) is a centralized repository of 
+information used to store, organize, and retrieve knowledge. It is a critical component 
+of various AI systems, especially expert systems, and is designed to help these systems 
+make decisions, reason, and solve complex problems by simulating human expertise. 
+A knowledge base can include facts, rules, relationships, concepts, and other types 
+of structured or unstructured data relevant to a particular domain.
 ```
 
 The knowledge base is a set of sentences known by a knowledge-based agent.   
@@ -92,7 +97,8 @@ propositional logic sentences that can be used to make additional
 inferences about the world.
 
 ### Entailment (⊨)
-Entailment refers to a logical relationship between two statements where one statement necessarily follows from another. If a statement A entails a statement B, then B must be true if A is true.
+Entailment refers to a logical relationship between two statements where one statement   
+necessarily follows from another. If a statement A entails a statement B, then B must be true if A is true.
 
 
 
@@ -117,8 +123,10 @@ if all the information in α is true, then all the information in β is true.
 
 ```
 Logical Inference
-Inference is the process of deriving new truths (conclusions) from known truths (premises). To infer new information, we need to know the truth values of the propositions involved.
-By assigning truth values, a logical system can determine whether certain conclusions follow from a set of premises (this is where entailment comes in).
+Inference is the process of deriving new truths (conclusions) from known truths (premises). 
+To infer new information, we need to know the truth values of the propositions involved.
+By assigning truth values, a logical system can determine whether certain conclusions follow 
+from a set of premises (this is where entailment comes in).
 Example:
 Consider the propositions:
 P: "If it rains, the ground will be wet."
@@ -126,11 +134,14 @@ Q: "It is raining."
 R: "The ground is wet."
 ```
 
-For instance, in the Harry Potter example earlier, sentences 4 and 5 were inferred from sentences 1, 2, and 3.
+For instance, in the Harry Potter example earlier, sentences 4 and 5 were inferred   
+from sentences 1, 2, and 3.
 
-There are multiple ways to infer new knowledge based on existing knowledge. First, we will consider the Model Checking algorithm.
+There are multiple ways to infer new knowledge based on existing knowledge.   
+First, we will consider the Model Checking algorithm.
 
-To determine if KB ⊨ α (in other words, answering the question: “can we conclude that α is true based on our knowledge base”)
+To determine if KB ⊨ α (in other words, answering the question: “can we conclude that   
+α is true based on our knowledge base”)  
 Enumerate all possible models.
 If in every model where KB is true, α is true as well, then KB entails α (KB ⊨ α).
 Consider the following example:
@@ -142,6 +153,10 @@ R: Harry will go for a run.
 KB: (P ∧ ¬Q) → R (in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
 
 To answer the query using the Model Checking algorithm, we enumerate all possible models
+
+
+
+
 
 
 
