@@ -162,6 +162,8 @@ Model checking is a formal verification technique used to systematically check w
 
 ![alt text](image-29.png)
 
+![alt text](image-30.png)
+
 
 
 
