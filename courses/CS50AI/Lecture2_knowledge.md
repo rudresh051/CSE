@@ -150,9 +150,17 @@ P: It is a Tuesday.
 Q: It is raining.   
 R: Harry will go for a run. 
 
-KB: (P ∧ ¬Q) → R (in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
+KB: (P ∧ ¬Q) → R 
+(in words, P and not Q imply R) P (P is true) ¬Q (Q is false) Query: R (We want to know whether R is true or false; Does KB ⊨ R?)
 
 To answer the query using the Model Checking algorithm, we enumerate all possible models
+
+# Model Checking
+```
+Model checking is a formal verification technique used to systematically check whether a model of a system satisfies certain specifications or properties. It is widely used in computer science, particularly in verifying the correctness of hardware and software systems. The goal of model checking is to ensure that a system behaves as intended under all possible conditions.
+```
+
+![alt text](image-29.png)
 
 
 
