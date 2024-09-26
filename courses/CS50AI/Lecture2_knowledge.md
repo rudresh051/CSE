@@ -289,6 +289,18 @@ Hufflepuff, Ravenclaw, and Slytherin House.
 ![alt text](image-33.png)
 
 ## Inference Rules
+* Double Negation Elimination
+~(~a)
+
+* Implication Elimination
+a=>b
+~a v b
+
+* Biconditional elimination
+a <=> b
+a=>b ^ b=>a
+
+
 
 
 
