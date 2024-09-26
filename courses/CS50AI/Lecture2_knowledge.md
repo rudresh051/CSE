@@ -288,7 +288,95 @@ Hufflepuff, Ravenclaw, and Slytherin House.
 
 ![alt text](image-33.png)
 
+
+
 ## Inference Rules
+
+In artificial intelligence (AI), **inference rules** are logical constructs that allow AI systems to derive new information from known facts or premises. These rules are essential in reasoning systems, knowledge representation, and automated theorem proving, helping the AI to infer conclusions based on a set of logical statements. Some of the most common inference rules include:
+
+### Common Inference Rules in AI
+
+1. **Modus Ponens (Implication Elimination)**  
+   If `a` and `a => b` (i.e., "if a, then b") are known to be true, then `b` can be inferred:
+   \[
+   a, \ a \Rightarrow b \ \vdash b
+   \]
+   Example:  
+   If it is known that "if it rains, the ground will be wet" (`a => b`), and it is raining (`a`), then we can infer that the ground will be wet (`b`).
+
+2. **Modus Tollens (Contrapositive)**  
+   If `a => b` is known, and `~b` (b is false) is known, then `~a` can be inferred:
+   \[
+   a \Rightarrow b, \ \sim b \ \vdash \sim a
+   \]
+   Example:  
+   If "if it rains, the ground will be wet" (`a => b`), and the ground is not wet (`~b`), we can infer that it didn’t rain (`~a`).
+
+3. **Disjunction Introduction**  
+   If `a` is true, then `a v b` (a or b) can be inferred:
+   \[
+   a \ \vdash \ a \lor b
+   \]
+   Example:  
+   If it's true that "it is raining" (`a`), then we can infer that "it is raining or it is snowing" (`a v b`).
+
+4. **Disjunction Elimination**  
+   If `a v b` is known, and if both `a => c` and `b => c` are known, then `c` can be inferred:
+   \[
+   a \lor b, \ a \Rightarrow c, \ b \Rightarrow c \ \vdash c
+   \]
+   Example:  
+   If "it is either raining or snowing" (`a v b`), and both "if it rains, the streets will be wet" (`a => c`) and "if it snows, the streets will be wet" (`b => c`) are known, then we can infer that "the streets will be wet" (`c`).
+
+5. **And Introduction (Conjunction Introduction)**  
+   If `a` and `b` are both known to be true, then `a ^ b` can be inferred:
+   \[
+   a, \ b \ \vdash \ a \land b
+   \]
+   Example:  
+   If it's known that "it is raining" (`a`) and "it is cold" (`b`), we can infer that "it is raining and cold" (`a ^ b`).
+
+6. **And Elimination (Conjunction Elimination)**  
+   If `a ^ b` is known, then both `a` and `b` can be inferred separately:
+   \[
+   a \land b \ \vdash a, \ b
+   \]
+   Example:  
+   If "it is raining and cold" (`a ^ b`) is known, we can infer "it is raining" (`a`) and "it is cold" (`b`).
+
+7. **Negation Introduction (Reductio ad Absurdum)**  
+   If assuming `a` leads to a contradiction, then `~a` can be inferred:
+   \[
+   a \ \vdash \ \perp \ \Rightarrow \ \sim a
+   \]
+   Example:  
+   If assuming "it is raining" leads to an impossibility, then we can infer that "it is not raining."
+
+8. **Double Negation Elimination**  
+   If `~(~a)` is known, then `a` can be inferred:
+   \[
+   \sim (\sim a) \ \vdash a
+   \]
+   Example:  
+   If "it is not the case that it is not raining" (`~(~a)`) is known, we can infer "it is raining" (`a`).
+
+9. **De Morgan’s Laws**  
+   These laws are used to manipulate logical statements involving negations:
+   \[
+   \sim (a \land b) \equiv \sim a \lor \sim b, \ \sim (a \lor b) \equiv \sim a \land \sim b
+   \]
+   Example:  
+   If "it is not the case that it is both raining and cold" (`~(a ^ b)`) is known, we can infer that "it is either not raining or not cold" (`~a v ~b`).
+
+### Use of Inference Rules in AI
+
+- **Automated Reasoning**: In AI systems that perform reasoning tasks (like theorem proving or logic-based systems), inference rules help the system derive logical consequences from known facts.
+- **Knowledge Representation**: AI systems that work with formal knowledge bases use inference rules to extract new information from stored facts, helping them answer questions or make decisions.
+- **Expert Systems**: In expert systems, inference rules form the core of the inference engine, which applies these rules to a knowledge base to deduce conclusions or solutions.
+
+Inference rules are foundational for making AI capable of logical decision-making and problem-solving.
+
+
 * Double Negation Elimination
 ~(~a)
 
@@ -300,6 +388,10 @@ a=>b
 a <=> b
 a=>b ^ b=>a
 
+* De Morgan's Law
+~(a^b)
+
+~a v ~b
 
 
 
