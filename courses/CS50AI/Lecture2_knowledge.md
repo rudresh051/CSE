@@ -232,5 +232,21 @@ In medical diagnosis, knowledge engineers might work with doctors to encode medi
 Knowledge engineering plays a central role in AI and cognitive computing, enabling machines to solve complex tasks that typically require human expertise. It bridges the gap between human expertise and machine intelligence, allowing AI systems to function in areas like healthcare, law, finance, and more.
 
 
+#### Examples - 
+
+![alt text](image-31.png)
+
+![alt text](image-32.png)
+
+
+#### Examples -  Logic Puzzles
+
+* Gilderoy, Minerva, Pomona and Horace each belong
+to a different one of the four houses: Gryffindor,
+Hufflepuff, Ravenclaw, and Slytherin House.
+* Gilderoy belongs to Gryffindor or Ravenclaw.
+* Pomona does not belong in Slytherin.
+* Minerva belongs to Gryffindor.
+
 
 
