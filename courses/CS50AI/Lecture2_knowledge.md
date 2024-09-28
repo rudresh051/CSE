@@ -393,6 +393,23 @@ a=>b ^ b=>a
 
 ~a v ~b
 
+* Distributive law
+   * (a ^ (b v c) = (a ^ b) v (a ^ c))
 
+This distributive law will work with "or" as well.
+
+## Search Problems
+* Initial state
+* actions
+*  transition model
+* goal test
+* path cost function
+
+## Theorem Proving
+* initial state - starting knowledge base
+* actions - inference rules
+* transition model - new knowledge base after inference
+* goal test - check statement we're trying to prove
+* path cost function - number of steps in proof.
 
 
