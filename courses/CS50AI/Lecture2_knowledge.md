@@ -412,4 +412,115 @@ This distributive law will work with "or" as well.
 * goal test - check statement we're trying to prove
 * path cost function - number of steps in proof.
 
+## Resolution
+
+**Resolution** is a rule of inference used in propositional logic and first-order logic, particularly within automated theorem proving. It is the primary method in **resolution-based theorem proving** and is widely employed in AI for reasoning tasks such as logical deduction, SAT solvers, and other systems based on formal logic. The resolution method involves combining clauses to produce new clauses, aiming to derive a contradiction (typically represented by the empty clause, ⊥) to prove the validity of a given statement.
+
+### Key Concepts in Resolution
+
+1. **Clause**: A clause is a disjunction (OR) of literals. A literal is an atomic proposition (like `P`, `Q`, etc.) or its negation (`~P`). For example:
+   - `P ∨ Q ∨ ~R` is a clause.
+   
+2. **Conjunctive Normal Form (CNF)**: Resolution operates on sentences in **Conjunctive Normal Form**, where the formula is expressed as a conjunction (AND) of clauses, each of which is a disjunction (OR) of literals. For example:
+   \[
+   (P \lor Q) \land (\sim P \lor R)
+   \]
+   Every propositional logic formula can be converted into CNF.
+
+3. **Unification (for first-order logic)**: In first-order logic, resolution also requires **unification**, a process of finding substitutions that make different logical expressions identical.
+
+### Resolution Rule
+
+The **Resolution Rule** allows you to infer a new clause from two existing clauses that contain complementary literals (i.e., one contains a literal, and the other contains its negation).
+
+#### In propositional logic, the resolution rule can be formalized as:
+If you have two clauses:
+1. `A ∨ P`
+2. `B ∨ ~P`
+
+Where `P` is a literal and `~P` is its negation, you can resolve these two clauses to infer a new clause:
+\[
+A \lor B
+\]
+This is done by canceling out the complementary literals `P` and `~P`.
+
+#### Example:
+Suppose you have two clauses:
+1. `P ∨ Q` (Clause 1)
+2. `~P ∨ R` (Clause 2)
+
+By applying the resolution rule on `P` and `~P`, you can infer:
+\[
+Q \lor R
+\]
+This is the new clause obtained by resolving the two original clauses.
+
+### How Resolution is Used in AI
+
+1. **Proof by Refutation (Resolution Refutation)**: 
+   The most common use of resolution in AI is in **proof by refutation**. The method involves:
+   - **Negating the statement** to be proved.
+   - Converting all statements into **Conjunctive Normal Form** (CNF).
+   - Repeatedly applying the **resolution rule** to derive new clauses.
+   - The goal is to eventually derive an empty clause (⊥), which represents a contradiction. If a contradiction is found, the negation of the statement must be false, meaning the original statement is true.
+
+#### Steps in Proof by Refutation:
+1. **Negate the Conclusion**: Assume the negation of the statement you want to prove.
+2. **Convert to CNF**: Convert the premises and the negated conclusion to conjunctive normal form.
+3. **Apply Resolution**: Use the resolution rule on pairs of clauses to infer new clauses.
+4. **Derive Contradiction**: Continue applying the resolution rule until you derive the empty clause (⊥). This indicates that the original statement is true.
+
+2. **SAT Solvers**: Resolution is a foundational method used in **Boolean Satisfiability (SAT) solvers**, where the task is to determine whether a given propositional logic formula can be satisfied. By applying resolution, these solvers can identify whether a formula is unsatisfiable by attempting to derive a contradiction.
+
+3. **First-Order Logic**: In first-order logic, resolution requires unification to deal with variables. The unification process identifies substitutions for variables that make different terms identical, allowing resolution to be applied.
+
+### Example of Resolution Refutation (Propositional Logic)
+Consider the following premises:
+1. `P => Q` (if P, then Q)
+2. `Q => R` (if Q, then R)
+3. `~R` (R is false)
+
+We want to prove that `~P` (P is false).
+
+1. Convert to CNF:
+   - `P => Q` becomes `~P ∨ Q`
+   - `Q => R` becomes `~Q ∨ R`
+   - `~R` is already in CNF.
+
+2. Add the negation of what we want to prove, `P`.
+
+   The clauses we have are:
+   - Clause 1: `~P ∨ Q`
+   - Clause 2: `~Q ∨ R`
+   - Clause 3: `~R`
+   - Clause 4: `P`
+
+3. Apply the resolution rule:
+   - Resolve Clause 1 (`~P ∨ Q`) with Clause 4 (`P`) to get `Q`.
+   - Resolve Clause 2 (`~Q ∨ R`) with `Q` to get `R`.
+   - Resolve `R` with Clause 3 (`~R`) to get the empty clause (⊥).
+
+Since we've derived a contradiction (⊥), the original assumption (`P`) must be false, so `~P` is true.
+
+### Advantages of Resolution in AI
+- **Completeness**: Resolution is **refutation complete**, meaning that if a formula is unsatisfiable (false), resolution will eventually derive a contradiction.
+- **Uniformity**: The resolution method provides a uniform rule that can be applied systematically to all clauses, making it simple to automate in reasoning systems.
+
+### Limitations
+- **Efficiency**: Although resolution is complete, it can be computationally expensive, especially for large or complex sets of clauses.
+- **Exponential Blowup**: In some cases, the number of clauses generated during resolution can grow exponentially, making it impractical for certain applications.
+
+### Conclusion
+Resolution is a powerful inference method in AI, used to derive new facts from known ones and to prove the validity of statements via refutation. It is particularly useful in areas like theorem proving, logic programming, and SAT solving, forming the backbone of many automated reasoning systems.
+1. P v Q
+2. ~P
+
+=> 
+Q
+
+P v Q1 v Q2 v ... v Qn
+~P
+
+Q1 v Q2 v ... Qn
+
 
