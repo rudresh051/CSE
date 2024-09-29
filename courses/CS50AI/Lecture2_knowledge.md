@@ -523,4 +523,6 @@ P v Q1 v Q2 v ... v Qn
 
 Q1 v Q2 v ... Qn
 
+![alt text](image-37.png)
 
+![alt text](image-38.png)
