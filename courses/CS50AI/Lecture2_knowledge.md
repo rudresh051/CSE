@@ -665,4 +665,8 @@ BelongsTo(Minerva, Gryffindor)
   Minerva belongs to Gryffindor.
 
 ## Qunitfiers
-* Universal Quantification
+* Universal Quantification 
+* Existential Quantification
+
+![alt text](image-41.png)
+
