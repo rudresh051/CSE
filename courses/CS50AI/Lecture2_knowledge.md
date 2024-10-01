@@ -651,3 +651,18 @@ def check_all(knowledge, query, symbols, model):
         return(check_all(knowledge, query, remaining, model_true) and   
         check_all(knowledge, query, remaining, model_false))
 ```
+
+### First-Order Logic
+Constant Symbol - Minerva, Pomona, Horace, Gilderoy, Gryffindor, Hufflepuff, Ravenclaw, Slytherin.
+
+Predicate Symbol - Person, House, BelongsTo
+
+Person(Minerva) : Minerva is a person
+House(Gryffindor) : Gryffindor is a house
+~House(Minerva) : Minerva is not a house
+
+BelongsTo(Minerva, Gryffindor)
+  Minerva belongs to Gryffindor.
+
+## Qunitfiers
+* Universal Quantification
