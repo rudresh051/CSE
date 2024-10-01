@@ -52,24 +52,34 @@ biconditional <=>
 ### Model
 
 ```
-A model in AI or machine learning is a set of instructions or rules that helps a computer understand how to make predictions or decisions. It learns from past experiences (data) to figure out what will happen next. For example, if an AI model has learned from many photos of dogs, it can predict whether a new picture shows a dog.
+A model in AI or machine learning is a set of instructions or rules that helps a 
+computer understand how to make predictions or decisions. It learns from past 
+experiences (data) to figure out what will happen next. For example, if an AI model 
+has learned from many photos of dogs, it can predict whether a new picture shows a dog.
 ```
 
 ## Why to assign true or false?
 ```
-Assigning truth values to propositions is essential in logical systems and AI reasoning for several reasons, primarily to evaluate the validity of statements, derive conclusions, and simulate possible worlds or scenarios. Here's why this assignment process is important:
+Assigning truth values to propositions is essential in logical systems and AI reasoning 
+for several reasons, primarily to evaluate the validity of statements, derive conclusions, 
+and simulate possible worlds or scenarios. Here's why this assignment process is important:
 
 1. Defining Meaning and Truth
-Propositions are abstract statements about the world, but their meaning depends on whether they are true or false in a specific context.
-Assigning a truth value to propositions gives us a way to evaluate their truthfulness, which is necessary for logical reasoning. Without assigning truth values, it would be impossible to make any formal judgments about the propositions' correctness or applicability in a given situation.
+Propositions are abstract statements about the world, but their meaning depends on whether 
+they are true or false in a specific context.
+Assigning a truth value to propositions gives us a way to evaluate their truthfulness, 
+which is necessary for logical reasoning. Without assigning truth values, it would be 
+impossible to make any formal judgments about the propositions' correctness or applicability 
+in a given situation.
 Example:
-If you have a proposition like "The sky is blue," it’s meaningless unless we know whether this statement is true or false in a given context (e.g., during the day vs. at night).
+If you have a proposition like "The sky is blue," it’s meaningless unless we know 
+whether this statement is true or false in a given context (e.g., during the day vs. at night).
 ```
 
 
 The model is an assignment of a truth value to every proposition.   
 To reiterate, propositions are statements about the world that can be either true or false.  
-However, knowledge about the world is represented in the truth values of these   propositions.   
+However, knowledge about the world is represented in the truth values of these propositions.   
 The model is the truth-value assignment that provides information   
 about the world.
 
@@ -98,7 +108,8 @@ inferences about the world.
 
 ### Entailment (⊨)
 Entailment refers to a logical relationship between two statements where one statement   
-necessarily follows from another. If a statement A entails a statement B, then B must be true if A is true.
+necessarily follows from another. If a statement A entails a statement B, then B must be   
+true if A is true.
 
 
 
@@ -190,7 +201,8 @@ decision-making.
 
 1. **Knowledge Acquisition**:
    - Gathering knowledge from experts, databases, documents, and other sources.
-   - This involves extracting domain-specific knowledge and identifying how experts reason about problems.
+   - This involves extracting domain-specific knowledge and identifying how experts reason   
+   about problems.
    - Techniques include interviews with experts, mining data, or using tools like machine   
    learning to extract knowledge automatically.
 
@@ -205,7 +217,8 @@ decision-making.
 
 3. **Knowledge Validation**:
    - Ensuring that the acquired knowledge is accurate, relevant, and complete.   
-   It involves testing the knowledge against known scenarios to ensure that the system behaves as expected.
+   It involves testing the knowledge against known scenarios to ensure that the system behaves   
+   as expected.
    - This step may involve working with experts to confirm that the system’s reasoning   
    aligns with real-world decisions.
 
@@ -292,7 +305,10 @@ Hufflepuff, Ravenclaw, and Slytherin House.
 
 ## Inference Rules
 
-In artificial intelligence (AI), **inference rules** are logical constructs that allow AI systems to derive new information from known facts or premises. These rules are essential in reasoning systems, knowledge representation, and automated theorem proving, helping the AI to infer conclusions based on a set of logical statements. Some of the most common inference rules include:
+In artificial intelligence (AI), **inference rules** are logical constructs that allow AI systems   
+to derive new information from known facts or premises. These rules are essential in reasoning   
+systems, knowledge representation, and automated theorem proving, helping the AI to infer   
+conclusions based on a set of logical statements. Some of the most common inference rules include:
 
 ### Common Inference Rules in AI
 
@@ -302,7 +318,8 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    a, \ a \Rightarrow b \ \vdash b
    \]
    Example:  
-   If it is known that "if it rains, the ground will be wet" (`a => b`), and it is raining (`a`), then we can infer that the ground will be wet (`b`).
+   If it is known that "if it rains, the ground will be wet" (`a => b`), and it is raining (`a`),   
+   then we can infer that the ground will be wet (`b`).
 
 2. **Modus Tollens (Contrapositive)**  
    If `a => b` is known, and `~b` (b is false) is known, then `~a` can be inferred:
@@ -310,23 +327,27 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    a \Rightarrow b, \ \sim b \ \vdash \sim a
    \]
    Example:  
-   If "if it rains, the ground will be wet" (`a => b`), and the ground is not wet (`~b`), we can infer that it didn’t rain (`~a`).
+   If "if it rains, the ground will be wet" (`a => b`), and the ground is not wet (`~b`), we can   
+   infer that it didn’t rain (`~a`).
 
 3. **Disjunction Introduction**  
-   If `a` is true, then `a v b` (a or b) can be inferred:
+   If `a` is true, then `a v b` (a or b) can be inferred:  
    \[
    a \ \vdash \ a \lor b
    \]
    Example:  
-   If it's true that "it is raining" (`a`), then we can infer that "it is raining or it is snowing" (`a v b`).
+   If it's true that "it is raining" (`a`), then we can infer that "it is raining or it   
+   is snowing" (`a v b`).
 
 4. **Disjunction Elimination**  
-   If `a v b` is known, and if both `a => c` and `b => c` are known, then `c` can be inferred:
+   If `a v b` is known, and if both `a => c` and `b => c` are known, then `c` can be inferred:  
    \[
    a \lor b, \ a \Rightarrow c, \ b \Rightarrow c \ \vdash c
    \]
    Example:  
-   If "it is either raining or snowing" (`a v b`), and both "if it rains, the streets will be wet" (`a => c`) and "if it snows, the streets will be wet" (`b => c`) are known, then we can infer that "the streets will be wet" (`c`).
+   If "it is either raining or snowing" (`a v b`), and both "if it rains, the streets will   
+   be wet" (`a => c`) and "if it snows, the streets will be wet" (`b => c`) are known, then   
+   we can infer that "the streets will be wet" (`c`).
 
 5. **And Introduction (Conjunction Introduction)**  
    If `a` and `b` are both known to be true, then `a ^ b` can be inferred:
@@ -334,7 +355,8 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    a, \ b \ \vdash \ a \land b
    \]
    Example:  
-   If it's known that "it is raining" (`a`) and "it is cold" (`b`), we can infer that "it is raining and cold" (`a ^ b`).
+   If it's known that "it is raining" (`a`) and "it is cold" (`b`), we can infer that "it is   
+   raining and cold" (`a ^ b`).
 
 6. **And Elimination (Conjunction Elimination)**  
    If `a ^ b` is known, then both `a` and `b` can be inferred separately:
@@ -342,7 +364,8 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    a \land b \ \vdash a, \ b
    \]
    Example:  
-   If "it is raining and cold" (`a ^ b`) is known, we can infer "it is raining" (`a`) and "it is cold" (`b`).
+   If "it is raining and cold" (`a ^ b`) is known, we can infer "it is raining" (`a`)   
+   and "it is cold" (`b`).
 
 7. **Negation Introduction (Reductio ad Absurdum)**  
    If assuming `a` leads to a contradiction, then `~a` can be inferred:
@@ -350,7 +373,8 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    a \ \vdash \ \perp \ \Rightarrow \ \sim a
    \]
    Example:  
-   If assuming "it is raining" leads to an impossibility, then we can infer that "it is not raining."
+   If assuming "it is raining" leads to an impossibility, then we can infer that "it is   
+   not raining."
 
 8. **Double Negation Elimination**  
    If `~(~a)` is known, then `a` can be inferred:
@@ -358,23 +382,30 @@ In artificial intelligence (AI), **inference rules** are logical constructs that
    \sim (\sim a) \ \vdash a
    \]
    Example:  
-   If "it is not the case that it is not raining" (`~(~a)`) is known, we can infer "it is raining" (`a`).
+   If "it is not the case that it is not raining" (`~(~a)`) is known, we can infer   
+   "it is raining" (`a`).
 
 9. **De Morgan’s Laws**  
-   These laws are used to manipulate logical statements involving negations:
+   These laws are used to manipulate logical statements involving negations:  
    \[
    \sim (a \land b) \equiv \sim a \lor \sim b, \ \sim (a \lor b) \equiv \sim a \land \sim b
    \]
    Example:  
-   If "it is not the case that it is both raining and cold" (`~(a ^ b)`) is known, we can infer that "it is either not raining or not cold" (`~a v ~b`).
+   If "it is not the case that it is both raining and cold" (`~(a ^ b)`) is known, we can   
+   infer that "it is either not raining or not cold" (`~a v ~b`).
 
 ### Use of Inference Rules in AI
 
-- **Automated Reasoning**: In AI systems that perform reasoning tasks (like theorem proving or logic-based systems), inference rules help the system derive logical consequences from known facts.
-- **Knowledge Representation**: AI systems that work with formal knowledge bases use inference rules to extract new information from stored facts, helping them answer questions or make decisions.
-- **Expert Systems**: In expert systems, inference rules form the core of the inference engine, which applies these rules to a knowledge base to deduce conclusions or solutions.
+- **Automated Reasoning**: In AI systems that perform reasoning tasks (like theorem proving   
+or logic-based systems), inference rules help the system derive logical consequences from  
+known facts.
+- **Knowledge Representation**: AI systems that work with formal knowledge bases use inference   
+rules to extract new information from stored facts, helping them answer questions or make decisions.
+- **Expert Systems**: In expert systems, inference rules form the core of the inference engine,   
+which applies these rules to a knowledge base to deduce conclusions or solutions.
 
-Inference rules are foundational for making AI capable of logical decision-making and problem-solving.
+Inference rules are foundational for making AI capable of logical decision-making   
+and problem-solving.
 
 
 * Double Negation Elimination
@@ -414,31 +445,44 @@ This distributive law will work with "or" as well.
 
 ## Resolution
 
-**Resolution** is a rule of inference used in propositional logic and first-order logic, particularly within automated theorem proving. It is the primary method in **resolution-based theorem proving** and is widely employed in AI for reasoning tasks such as logical deduction, SAT solvers, and other systems based on formal logic. The resolution method involves combining clauses to produce new clauses, aiming to derive a contradiction (typically represented by the empty clause, ⊥) to prove the validity of a given statement.
+**Resolution** is a rule of inference used in propositional logic and first-order logic,   
+particularly within automated theorem proving. It is the primary method in   
+**resolution-based theorem proving**   
+and is widely employed in AI for reasoning tasks such as logical deduction, SAT solvers, and   
+other systems based on formal logic. The resolution method involves combining clauses to   
+produce new clauses, aiming to derive a contradiction (typically represented by the empty   
+clause, ⊥) to prove the validity of a given statement.
 
 ### Key Concepts in Resolution
 
-1. **Clause**: A clause is a disjunction (OR) of literals. A literal is an atomic proposition (like `P`, `Q`, etc.) or its negation (`~P`). For example:
+1. **Clause**: A clause is a disjunction (OR) of literals. A literal is an atomic proposition   
+(like `P`, `Q`, etc.) or its negation (`~P`). For example:
    - `P ∨ Q ∨ ~R` is a clause.
    
-2. **Conjunctive Normal Form (CNF)**: Resolution operates on sentences in **Conjunctive Normal Form**, where the formula is expressed as a conjunction (AND) of clauses, each of which is a disjunction (OR) of literals. For example:
+2. **Conjunctive Normal Form (CNF)**: Resolution operates on sentences in **Conjunctive Normal Form**,   
+where the formula is expressed as a conjunction (AND) of clauses, each of which is a disjunction (OR)   
+of literals. For example:
    \[
    (P \lor Q) \land (\sim P \lor R)
    \]
    Every propositional logic formula can be converted into CNF.
 
-3. **Unification (for first-order logic)**: In first-order logic, resolution also requires **unification**, a process of finding substitutions that make different logical expressions identical.
+3. **Unification (for first-order logic)**: In first-order logic, resolution also requires **unification**,   
+a process of finding substitutions that make different logical expressions identical.
 
 ### Resolution Rule
 
-The **Resolution Rule** allows you to infer a new clause from two existing clauses that contain complementary literals (i.e., one contains a literal, and the other contains its negation).
+The **Resolution Rule** allows you to infer a new clause from two existing clauses that contain   
+complementary literals (i.e., one contains a literal, and the other contains its negation).
 
 #### In propositional logic, the resolution rule can be formalized as:
 If you have two clauses:
 1. `A ∨ P`
 2. `B ∨ ~P`
 
-Where `P` is a literal and `~P` is its negation, you can resolve these two clauses to infer a new clause:
+Where `P` is a literal and `~P` is its negation, you can resolve these two   
+clauses to infer a   
+new clause:
 \[
 A \lor B
 \]
@@ -462,17 +506,26 @@ This is the new clause obtained by resolving the two original clauses.
    - **Negating the statement** to be proved.
    - Converting all statements into **Conjunctive Normal Form** (CNF).
    - Repeatedly applying the **resolution rule** to derive new clauses.
-   - The goal is to eventually derive an empty clause (⊥), which represents a contradiction. If a contradiction is found, the negation of the statement must be false, meaning the original statement is true.
+   - The goal is to eventually derive an empty clause (⊥), which represents a contradiction.   
+   If a contradiction is found, the negation of the statement must be false, meaning the   
+   original statement is true.
 
 #### Steps in Proof by Refutation:
 1. **Negate the Conclusion**: Assume the negation of the statement you want to prove.
-2. **Convert to CNF**: Convert the premises and the negated conclusion to conjunctive normal form.
+2. **Convert to CNF**: Convert the premises and the negated conclusion to conjunctive   
+normal form.
 3. **Apply Resolution**: Use the resolution rule on pairs of clauses to infer new clauses.
-4. **Derive Contradiction**: Continue applying the resolution rule until you derive the empty clause (⊥). This indicates that the original statement is true.
+4. **Derive Contradiction**: Continue applying the resolution rule until you derive the empty clause (⊥).   
+This indicates that the original statement is true.
 
-2. **SAT Solvers**: Resolution is a foundational method used in **Boolean Satisfiability (SAT) solvers**, where the task is to determine whether a given propositional logic formula can be satisfied. By applying resolution, these solvers can identify whether a formula is unsatisfiable by attempting to derive a contradiction.
+2. **SAT Solvers**: Resolution is a foundational method used in **Boolean Satisfiability (SAT) solvers**,   
+where the task is to determine whether a given propositional logic formula can be satisfied.   
+By applying resolution, these solvers can identify whether a formula is unsatisfiable by   
+attempting to derive a contradiction.
 
-3. **First-Order Logic**: In first-order logic, resolution requires unification to deal with variables. The unification process identifies substitutions for variables that make different terms identical, allowing resolution to be applied.
+3. **First-Order Logic**: In first-order logic, resolution requires unification to deal   
+with variables. The unification process identifies substitutions for variables that make   
+different terms identical, allowing resolution to be applied.
 
 ### Example of Resolution Refutation (Propositional Logic)
 Consider the following premises:
@@ -500,18 +553,26 @@ We want to prove that `~P` (P is false).
    - Resolve Clause 2 (`~Q ∨ R`) with `Q` to get `R`.
    - Resolve `R` with Clause 3 (`~R`) to get the empty clause (⊥).
 
-Since we've derived a contradiction (⊥), the original assumption (`P`) must be false, so `~P` is true.
+Since we've derived a contradiction (⊥), the original assumption (`P`) must be   
+false, so `~P` is true.
 
 ### Advantages of Resolution in AI
-- **Completeness**: Resolution is **refutation complete**, meaning that if a formula is unsatisfiable (false), resolution will eventually derive a contradiction.
-- **Uniformity**: The resolution method provides a uniform rule that can be applied systematically to all clauses, making it simple to automate in reasoning systems.
+- **Completeness**: Resolution is **refutation complete**, meaning that if a formula   
+is unsatisfiable (false), resolution will eventually derive a contradiction.
+- **Uniformity**: The resolution method provides a uniform rule that can be applied   
+systematically to all clauses, making it simple to automate in reasoning systems.
 
 ### Limitations
-- **Efficiency**: Although resolution is complete, it can be computationally expensive, especially for large or complex sets of clauses.
-- **Exponential Blowup**: In some cases, the number of clauses generated during resolution can grow exponentially, making it impractical for certain applications.
+- **Efficiency**: Although resolution is complete, it can be computationally expensive,   
+especially for large or complex sets of clauses.
+- **Exponential Blowup**: In some cases, the number of clauses generated during resolution   
+can grow exponentially, making it impractical for certain applications.
 
 ### Conclusion
-Resolution is a powerful inference method in AI, used to derive new facts from known ones and to prove the validity of statements via refutation. It is particularly useful in areas like theorem proving, logic programming, and SAT solving, forming the backbone of many automated reasoning systems.
+Resolution is a powerful inference method in AI, used to derive new facts from known ones   
+and to prove the validity of statements via refutation. It is particularly useful in areas   
+like theorem proving, logic programming, and SAT solving, forming the backbone of many   
+automated reasoning systems.
 1. P v Q
 2. ~P
 
@@ -539,15 +600,20 @@ hagrid = Symbol("hagrid")  # Harry visited Hagrid
 dumbledore = Symbol("dumbledore")  # Harry visited Dumbledore
 
 # Save sentences into the KB
-knowledge = And(  # Starting from the "And" logical connective, becasue each proposition represents knowledge that we know to be true.
+knowledge = And(  # Starting from the "And" logical connective, becasue each proposition   
+represents knowledge that we know to be true.
 
     Implication(Not(rain), hagrid),  # ¬(It is raining) → (Harry visited Hagrid)
 
     Or(hagrid, dumbledore),  # (Harry visited Hagrid) ∨ (Harry visited Dumbledore).
 
-    Not(And(hagrid, dumbledore)),  # ¬(Harry visited Hagrid ∧ Harry visited Dumbledore) i.e. Harry did not visit both Hagrid and Dumbledore.
+    Not(And(hagrid, dumbledore)),  # ¬(Harry visited Hagrid ∧ Harry visited Dumbledore)   
+    i.e. Harry did not visit both Hagrid and Dumbledore.
 
-    dumbledore  # Harry visited Dumbledore. Note that while previous propositions contained multiple symbols with connectors, this is a proposition consisting of one symbol. This means that we take as a fact that, in this KB, Harry visited Dumbledore.
+    dumbledore  # Harry visited Dumbledore. Note that while previous propositions   
+    contained multiple symbols with connectors, this is a proposition consisting of   
+    one symbol. This means that we take as a fact that, in this KB, Harry visited   
+    Dumbledore.
     )
 ```
 
@@ -556,7 +622,11 @@ knowledge = And(  # Starting from the "And" logical connective, becasue each pro
 def check_all(knowledge, query, symbols, model):
 
     # If model has an assignment for each symbol
-    # (The logic below might be a little confusing: we start with a list of symbols. The function is recursive, and every time it calls itself it pops one symbol from the symbols list and generates models from it. Thus, when the symbols list is empty, we know that we finished generating models with every possible truth assignment of symbols.)
+    # (The logic below might be a little confusing: we start with a list of symbols.   
+    The function is recursive, and every time it calls itself it pops one symbol from   
+    the symbols list and generates models from it. Thus, when the symbols list is empty,   
+    we know that we finished generating models with every possible truth assignment   
+    of symbols.)
     if not symbols:
 
         # If knowledge base is true in model, then query must also be true
@@ -578,5 +648,6 @@ def check_all(knowledge, query, symbols, model):
         model_false[p] = False
 
         # Ensure entailment holds in both models
-        return(check_all(knowledge, query, remaining, model_true) and check_all(knowledge, query, remaining, model_false))
+        return(check_all(knowledge, query, remaining, model_true) and   
+        check_all(knowledge, query, remaining, model_false))
 ```
