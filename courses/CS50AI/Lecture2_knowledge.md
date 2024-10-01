@@ -664,9 +664,16 @@ House(Gryffindor) : Gryffindor is a house
 BelongsTo(Minerva, Gryffindor)
   Minerva belongs to Gryffindor.
 
-## Qunitfiers
+## Quanitfiers
 * Universal Quantification 
+
+![alt text](image-42.png)
+
 * Existential Quantification
 
 ![alt text](image-41.png)
+
+![alt text](image-43.png)
+
+
 
