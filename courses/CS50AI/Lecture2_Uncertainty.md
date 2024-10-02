@@ -26,3 +26,49 @@ All of the possible worlds are
 
 ![alt text](image-48.png)
 
+and their sum are
+![alt text](image-49.png)
+
+P(sum to 12) = 1/36
+P(sum to 7) = 6/36 = 1/6
+
+## Unconditional Probability
+
+degree of belief in a proposition in the absence of any other evidence.
+
+
+## Conditional Probability
+
+degree of belief in a proposition given some evidence that has already been revealed
+
+e.g. P(a|b)
+what is the probability of a given b
+e.g.  
+P(rain today | rain yesterday)
+
+e.g. 
+P(route change | traffic conditions)
+
+e.g. 
+P(disease | test results)
+
+### How to calculate conditional probability
+
+![alt text](image-50.png)
+
+## random variable
+a variable in probability theory with a domain of possible values it can take on
+e.g.  
+Weather - {sun, cloud, rain, wind, snow}
+traffic - {none, light, heavy}
+Flight - {on time, delayed, cancelled}  
+
+probability distribution  
+P(Flight = on time) = 0.6
+P(Flight = delayed) = 0.3
+P(Flight = cancelled) = 0.1
+
+
+P(Flight) = <0.6,0.3,0.1>
+
+
