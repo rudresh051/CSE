@@ -60,8 +60,8 @@ P(disease | test results)
 
 a variable in probability theory with a domain of possible values it can take on  
 e.g.  
-Weather - {sun, cloud, rain, wind, snow}
-traffic - {none, light, heavy}
+Weather - {sun, cloud, rain, wind, snow}  
+traffic - {none, light, heavy}  
 Flight - {on time, delayed, cancelled}  
 
 probability distribution  
@@ -69,4 +69,16 @@ P(Flight = on time) = 0.6
 P(Flight = delayed) = 0.3  
 P(Flight = cancelled) = 0.1
 
+This notation a little bit might be confusing  
 P(Flight) = <0.6,0.3,0.1>
+
+### independence
+
+the knowledge that one event occurs does
+not affect the probability of the other event
+
+![alt text](image-52.png)
+
+### Bayes' Rule
+
+![alt text](image-53.png)
