@@ -96,3 +96,14 @@ P(rainy afternoon | cloudy morning)
 P(visible effect | unknown cause)
 We can calculate  
 P(unknown cause | visible effect)
+
+```
+Knowing
+P(blurry text | counterfeit bill)
+We can calculate
+P(counterfeit bill | blurry text)
+```
+
+## Joint Probability
+![alt text](image-57.png)
+
