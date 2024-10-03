@@ -82,3 +82,17 @@ not affect the probability of the other event
 ### Bayes' Rule
 
 ![alt text](image-53.png)
+
+![alt text](image-55.png)
+
+![alt text](image-56.png)
+
+>> knowing  
+P(cloudy morning | rainy afternoon)  
+We can calculate
+P(rainy afternoon | cloudy morning)  
+
+>> Knowing  
+P(visible effect | unknown cause)
+We can calculate  
+P(unknown cause | visible effect)
