@@ -106,4 +106,3 @@ P(counterfeit bill | blurry text)
 
 ## Joint Probability
 ![alt text](image-57.png)
-
