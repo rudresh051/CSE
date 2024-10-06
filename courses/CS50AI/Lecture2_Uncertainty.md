@@ -80,6 +80,7 @@ not affect the probability of the other event
 ![alt text](image-52.png)
 
 ### Bayes' Rule
+
 Bayes' Rule, also known as Bayes' Theorem, is a fundamental concept in probability theory that describes how to update the probability of a hypothesis based on new evidence. It provides a way to calculate the posterior probability (the updated probability of an event) given the prior probability (the initial belief) and the likelihood of observing the evidence.
 
 Intuition
@@ -143,3 +144,14 @@ The left side of the equation means “The probability of random variable X havi
 * Conditioning: P(a) = P(a | b)P(b) + P(a | ¬b)P(¬b). This is a similar idea to marginalization. The probability of event a occurring is equal to the probability of a given b times the probability of b, plus the probability of a given ¬b time the probability of ¬b.
 
 ![alt text](image-59.png)
+
+## Bayesian Networks
+
+A Bayesian network is a data structure that represents the dependencies among random variables. Bayesian networks have the following properties:
+
+* They are directed graphs.
+* Each node on the graph represent a random variable.
+* An arrow from X to Y represents that X is a parent of Y. That is, the probability distribution of Y depends on the value of X.
+* Each node X has probability distribution P(X | Parents(X)).
+
+![alt text](image-60.png)
