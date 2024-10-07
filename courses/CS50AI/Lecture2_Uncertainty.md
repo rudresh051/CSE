@@ -177,3 +177,16 @@ Let’s describe this Bayesian network from the top down:
 * Train is the variable that encodes whether the train is on time or delayed, taking the values {on time, delayed}. Note that Train has arrows pointing to it from both Maintenance and Rain. This means that both are parents of Train, and their values affect the probability distribution of Train.
 
 ![alt text](image-61.png)
+
+* Appointment is a random variable that represents whether we attend our appointment, taking the values {attend, miss}. Note that its only parent is Train. This
+point about Bayesian network is noteworthy: parents include only direct relations. It is true that maintenance affects whether the train is on time, and whether
+the train is on time affects whether we attend the appointment. However, in the end, what directly affects our chances of attending the appointment is whether
+the train came on time, and this is what is represented in the Bayesian network. For example, if the train came on time, it could be heavy rain and track
+maintenance, but that has no effect over whether we made it to our appointment.
+
+|T|attend|miss|
+|---|---|---|
+| ontime | 0.9 | 0.1 |
+|delayed|0.6|0.4|
+
+* For example, if we want to find the probability of missing the meeting when the train was delayed on a day with no maintenance and light rain, or P(light, no, delayed, miss), we will compute the following: P(light)P(no | light)P(delayed | light, no)P(miss | delayed). The value of each of the individual probabilities can be found in the probability distributions above, and then these values are multiplied to produce P(no, light, delayed, miss).
