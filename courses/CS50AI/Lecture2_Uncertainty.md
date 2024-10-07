@@ -155,3 +155,25 @@ A Bayesian network is a data structure that represents the dependencies among ra
 * Each node X has probability distribution P(X | Parents(X)).
 
 ![alt text](image-60.png)
+
+Let’s describe this Bayesian network from the top down:
+
+* Rain is the root node in this network. This means that its probability distribution is not reliant on any prior event. In our example, Rain is a random variable that can take the values {none, light, heavy} with the following probability distribution:
+
+|none|light|heavy|
+|---|---|---|
+| 0.7 | 0.2 | 0.1 |
+
+
+* Maintenance, in our example, encodes whether there is train track maintenance, taking the values {yes, no}. Rain is a parent node of Maintenance, which means that the probability distribution of Maintenance is affected by Rain.
+
+|R|yes|no|
+|---|---|---|
+| none | 0.4 | 0.6 |
+| light | 0.2 | 0.8 |
+|heavey|0.1|0.9|
+
+
+* Train is the variable that encodes whether the train is on time or delayed, taking the values {on time, delayed}. Note that Train has arrows pointing to it from both Maintenance and Rain. This means that both are parents of Train, and their values affect the probability distribution of Train.
+
+![alt text](image-61.png)
